@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtJudul"
+        android:textSize="12pt"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Masukkan Data Anda"/>
+
+    <EditText
+        android:id="@+id/EdEMail"
+        android:background="@drawable/loginborder"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:id="@+id/EdUsername"
+        android:background="@drawable/loginborder"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username"
+        />
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/password"
+        android:layout_below="@id/EdUsername"
+        android:background="@drawable/loginborder"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        />
+
+    <Button
+        android:background="@drawable/btnborder"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnMasuk"
+        android:layout_below="@id/password"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Masuk"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnMasuk"
+        android:id="@+id/perincianmasuk"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Lupa Perincian Masuk Anda ?" />
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/perincianmasuk"
+        android:id="@+id/dapatkanbantuan"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dapatkan Bantuan Masuk"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txtBelumpunyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun? "/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txtBikinAkun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
